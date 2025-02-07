@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f8f8f8;
+        }
+        .cart-notification {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .cart-notification img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        .cart-notification button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .cart-notification button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart-notification">
+        <h2>Item added to your cart!</h2>
+        <img src="labtop/1.jpg" alt="Product Image">
+        <p><strong>ASUS Vivobook 14 X1405VA-LY304W</strong></p>
+        <p>Intel® Core i7 Processor 150U - 16GB RAM - 512GB SSD - 14" WUXGA - Backlit Keyboard - Windows 11 - 2 Year Warranty</p>
+        <p><strong>Price: $729</strong></p>
+        <button onclick="window.location.href='cart.html'">View Cart</button>
+    </div>
+</body>
+</html>
