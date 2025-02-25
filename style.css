@@ -823,9 +823,60 @@ h1 {
     color: white;
     border-radius: 5px;
 }
+.h2{
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: rgb(241, 48, 14);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 .pagination a:hover {
     background-color: #555;
+}
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+    .nav-menu {
+        flex-direction: column;
+    }
+    .search-bar input {
+        width: 80%;
+    }
+}
+
+/* CSS សម្រាប់ទូរស័ព្ទ (អេក្រង់តូចជាង 600px) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+    .nav-menu {
+        flex-direction: column;
+        text-align: center;
+    }
+    .search-bar {
+        flex-direction: column;
+    }
+    .search-bar input {
+        width: 100%;
+    }
+    .search-bar button {
+        width: 100%;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
 }
 
 
